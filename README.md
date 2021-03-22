@@ -41,9 +41,17 @@ flask run # start application
 
 
 py -m venv env
+
 .\env\Scripts\activate
+
 pip install -r requirements.txt
-python -m pip install --upgrade pip
+
+python -m pip install --upgrade 
+
 $env:FLASK_APP="server"
 $env:FLASK_ENV="development"
 flask run # start application
+
+pip install -r requirements.txt
+
+pip freeze > requirements.txt
